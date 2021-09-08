@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>
-        @yield('title', 'LiveWireSPA One')
+        @stack('pageTitle', 'Twinbit')
     </title>
     <link rel="shortcut icon" href="{{asset('favicon.jpg')}}"/>
     @yield('link')
@@ -16,7 +16,6 @@
 </head>
 <body>
 @livewire('partial.navbar')
-
 {{--Route Components View will be yielded in $slot--}}
 {{ $slot }}
 
